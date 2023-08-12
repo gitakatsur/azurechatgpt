@@ -19,7 +19,7 @@ const ChatRow: FC<ChatRowProps> = (props) => {
     <div
       className={cn(
         "border-b ",
-        props.type === "assistant" ? "bg-primary/5" : ""
+        props.type === "assistant" ? "bg-secondary" : ""
       )}
     >
       <div className="container mx-auto max-w-4xl py-6">
@@ -28,7 +28,7 @@ const ChatRow: FC<ChatRowProps> = (props) => {
             <Avatar>
               <AvatarImage src={props.profilePicture} />
             </Avatar>
-            <Typography variant="h5" className="capitalize">
+            <Typography variant="h5" className="capitalize text-primary">
               {props.name}
             </Typography>
           </div>
